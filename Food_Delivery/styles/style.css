@@ -1,0 +1,201 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* CSS Variables */
+:root{
+    --navbar-height: 60px;
+}
+
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0px;
+}
+
+#navbar::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: .6;
+}
+
+#logo{
+    margin: 10px;
+    padding: 10px;
+}
+
+#logo img{
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+}
+
+#navbar ul{
+    display: flex;
+}
+
+#navbar ul li{
+    
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a{
+    /* color: brown; */
+    color: white;
+    display: border;
+    text-decoration: none;
+    padding: 3px 20px;
+    border-radius: 15px;
+}
+
+#navbar ul li a:hover{
+    color: tomato;
+    background-color: white;
+}
+
+#home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 200px;
+    height: 500px;
+}
+
+#home::before{
+    content: "";
+    background: url(../image/bg2.jpg) no-repeat center center/cover;
+    position: absolute;
+    bottom: 15px;
+    height: 100%;
+    width: 100%;
+    z-index: -2;
+    opacity: .85;
+}
+
+
+#home p{
+    font-size: 1.2rem;
+    text-align: center;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Services Station */
+.services{
+    margin: 34px;
+    display: flex;
+}
+.services .box{
+    border: 2px solid green;
+    margin: 5px 25px;
+    padding: 6px 10px;
+    border-radius: 10px;
+    background-color: #f8e2e2;
+}
+.services .box img{
+    height: 170px;
+    display: block;
+    margin: auto;
+}
+
+.services .box p{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+/* Utility Classes */
+.h-primary{
+    font-size: 2.5rem;
+    padding: 12px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.h-secondary{
+    font-size: 1.8rem;
+    padding: 12px;
+    font-family: 'Be Vietnam Pro', sans-serif;
+
+}
+.btn{
+    background-color: coral;
+    border: 2px solid grey;
+    font-size: 1.5rem;
+    margin: 8px;
+    padding: 4px;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.centre{
+    text-align: center;
+}
+
+.client_item{
+    background: url("image/logo2.jpg");
+}
+.client_item img{
+    height: 100%;
+    width: 100%;
+    
+}
+
+.h-primary_centre{
+    text-align: center;
+    font-size: 2.3rem;
+}
+
+
+/* Contact Section */
+#contact{
+    position: relative;
+}
+
+#contact::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: .7;
+    background: url('../image/contact.jpg') no-repeat center center/cover;
+}
+
+footer{
+    background-color: black;
+    color: white;
+    padding: 5px 7px;
+}
+
+#contact_box{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding-bottom: 34px;
+}
+
+#contact_box input,
+#contact_box textarea{
+    font-size: 1.1rem;
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 10px;
+
+}
+
+#contact_box form{
+    width: 40%;
+}
+
+#contact_box input{
+    font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}

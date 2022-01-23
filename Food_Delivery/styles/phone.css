@@ -1,0 +1,51 @@
+/* Responsive Design */
+
+/* Navigation*/
+#navbar{
+    flex-direction: column;
+}
+
+#navbar ul li a{
+    font-size: 1rem;
+    padding: 0px 4px;
+}
+
+
+/* Home Section */
+#home{
+    height: 370px;
+    padding: 3px 68px;
+}
+
+#home h1{
+    font-size: 20px;
+}
+
+#home::before{
+    height: 624px;
+}
+
+#home p{
+    font-size: 13px;
+}
+
+/* Services Section */
+.services{
+    flex-direction: column;
+}
+
+/* Our Clients*/
+
+
+
+/* Contact Us */
+
+/* Utility Classes */
+.btn{
+    font-size: 13px;
+    padding: 4px 8px;
+}
+
+html{
+    scroll-behavior: smooth;
+}
